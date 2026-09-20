@@ -66,4 +66,17 @@ public class Libro {
         this.copias=copias;
     }
 
+    //METODO toString para convertir el  contenido del objeto en texto
+    @Override //esto indica que sobreescribiendo el comportamiento de la clase, esto permite evitar errores de escritura
+    public String toString(){
+        return "Titulo" + titulo
+                + "| Autor" + autor
+                + "| Genero" + genero
+                + "| codigo " + codigo
+                + "| Año " + anio
+                + "| copias " + copias;
+    }
+
+
+
 }
