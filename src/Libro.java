@@ -23,7 +23,7 @@ public class Libro {
 
     // se crea un metodo getter para leer u obtener los valores de cada atributo
     //en este caso se obtine el titulo del libro
-    public String getTitulo(String titulo){
+    public String getTitulo(){
         return titulo;
     }
     //Metodo setter para asignar y modificar los valores en los atributos
@@ -31,40 +31,39 @@ public class Libro {
         this.titulo= titulo;
     }
 
-    public String getAutor(String autor){
+    public String getAutor(){
         return autor;
     }
     public void setAutor(String autor){
         this.autor= autor;
     }
 
-    public String getGenero(String genero){
+    public String getGenero(){
         return genero;
     }
     public void setGenero(String genero){
         this.genero= genero;
     }
 
-    public String getCodigo(String codigo){
+    public String getCodigo(){
         return codigo;
     }
     public void setCodigo(String codigo){
         this.codigo=codigo;
     }
 
-    public int getAnio(int anio){
+    public int getAnio(){
         return anio;
     }
     public void setAnio(int anio){
         this.anio=anio;
     }
 
-    public int getCopias(int copias){
+    public int getCopias(){
         return copias;
     }
     public void setCopias(int copias){
         this.copias=copias;
     }
-
 
 }
