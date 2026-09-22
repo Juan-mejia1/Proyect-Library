@@ -1,70 +1,30 @@
-public class Libro {
+public class Libro extends MaterialBibliografico {
+    private int copiasDisponibles;
 
-    //=CREACION DE ATRIBUTOS==
-    //encapsulamiento usando "Private"
-    private String titulo;
-    private String autor;
-    private String genero;
-    private String codigo;
-    private  int anio;
-    private int copias;
-
-    //==CONSTRUCTOR==
-    public Libro(String titulo, String autor, String genero, String codigo, int anio,int copias){
-
-        //Aqui conectamos los atributos con los parametros
-        this.titulo = titulo;
-        this.autor = autor;
-        this.genero = genero;
-        this.codigo = codigo;
-        this.anio = anio;
-        this.copias = copias;
+    public Libro(String titulo, String autor, String codigo, String genero, int anioPublicacion,
+            int copiasDisponibles) {
+        super(titulo, autor, codigo, genero, anioPublicacion);
+        this.copiasDisponibles = copiasDisponibles;
     }
 
-    // se crea un metodo getter para leer u obtener los valores de cada atributo
-    //en este caso se obtine el titulo del libro
-    public String getTitulo(String titulo){
-        return titulo;
-    }
-    //Metodo setter para asignar y modificar los valores en los atributos
-    public void setTitulo(String titulo){
-        this.titulo= titulo;
+    @Override
+    public String getTipoMaterial() {
+        return "Libro";
     }
 
-    public String getAutor(String autor){
-        return autor;
-    }
-    public void setAutor(String autor){
-        this.autor= autor;
+    public int getCopiasDisponibles() {
+        return copiasDisponibles;
     }
 
-    public String getGenero(String genero){
-        return genero;
-    }
-    public void setGenero(String genero){
-        this.genero= genero;
+    public void setCopiasDisponibles(int copiasDisponibles) {
+        this.copiasDisponibles = copiasDisponibles;
     }
 
-    public String getCodigo(String codigo){
-        return codigo;
-    }
-    public void setCodigo(String codigo){
-        this.codigo=codigo;
+    public int getCopias() {
+        return copiasDisponibles;
     }
 
-    public int getAnio(int anio){
-        return anio;
+    public void setCopias(int copias) {
+        this.copiasDisponibles = copias;
     }
-    public void setAnio(int anio){
-        this.anio=anio;
-    }
-
-    public int getCopias(int copias){
-        return copias;
-    }
-    public void setCopias(int copias){
-        this.copias=copias;
-    }
-
-
 }
